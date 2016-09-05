@@ -1,0 +1,8 @@
+C:\Users\damia\Work\FSharpMusic\FSharpMusic\bin\Debug\FSharpMusic.exe.config
+C:\Users\damia\Work\FSharpMusic\FSharpMusic\bin\Debug\FSharpMusic.XML
+C:\Users\damia\Work\FSharpMusic\FSharpMusic\bin\Debug\FSharpMusic.exe
+C:\Users\damia\Work\FSharpMusic\FSharpMusic\bin\Debug\FSharpMusic.pdb
+C:\Users\damia\Work\FSharpMusic\FSharpMusic\bin\Debug\FSharp.Core.dll
+C:\Users\damia\Work\FSharpMusic\FSharpMusic\bin\Debug\FSharp.Core.xml
+C:\Users\damia\Work\FSharpMusic\FSharpMusic\obj\Debug\FSharpMusic.exe
+C:\Users\damia\Work\FSharpMusic\FSharpMusic\obj\Debug\FSharpMusic.pdb
