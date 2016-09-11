@@ -6,7 +6,8 @@ open WavePacker
 
 
 let tokenToSound token = 
-    generateSamples(durationFromToken token) (frequency token)
+    let res = generateSamples(durationFromToken token) (frequency token)
+    res
 
 let assemble tokens = 
     List.map tokenToSound tokens |> Seq.concat

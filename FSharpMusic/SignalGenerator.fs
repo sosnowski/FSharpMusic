@@ -2,13 +2,13 @@
 
 let generateSamples miliseconds frequency = 
     let sampleRate = 44100.0
-    let sizteenBitSampleLimit = 32767.0
+    let sixteenBitSampleLimit = 32767.0
     let volume = 0.8
     let toAmplitude x = 
         x
         |> (*) (2.0 * System.Math.PI * frequency / sampleRate)
         |> sin
-        |> (*) sizteenBitSampleLimit
+        |> (*) sixteenBitSampleLimit
         |> (*) volume
         |> int16
     

@@ -67,7 +67,7 @@ let pScore = sepBy pToken (pstring " ")
 
 
 let parse score = 
-    match run pScore score with
+    match (run pScore score) with
     | Success(result, _, _) -> Choice1Of2 result
     | Failure (errorMsg, _, _) -> Choice2Of2 errorMsg
 
@@ -101,4 +101,5 @@ let frequency token =
         | Rest -> 0.0
         | Tone (note, octave) ->
             let gap = semitonesBetween (A, One) (note, octave)
-            220.0 * ((2.0 * (1.0/12.0)) ** (float gap))
+            let res = 220.0 * ((2.0 ** (1.0/12.0)) ** (float gap))
+            res
