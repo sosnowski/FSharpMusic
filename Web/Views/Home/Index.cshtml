@@ -1,7 +1,24 @@
 <div class="composer">
     <h1>F# Nokia Phone music generator</h1>
     <form method="post" action="/home/generate">
-        <textarea placeholder="Enter ringtone code here" name="score"></textarea>
+        <section class="columns">
+            <textarea placeholder="Enter ringtone code here" name="score"></textarea>
+            <section class="menu">
+                <p>Paste a Nokia Composer code and generate the sound!</p>
+                <p>Examples:</p>
+                <ul>
+                    <li><a href="" title="barbie">Barbie Girl</a></li>
+                    <li><a href="" title="metal">Metallica</a></li>
+                    <li><a href="" title="starwars">Star Wars</a></li>
+                    <li><a href="" title="tiger">Eye Of The Tiger</a></li>
+                </ul>
+                <a href="http://nokia.nigelcoldwell.co.uk/tunes.html" target="_blank">More...</a>
+            </section>
+        </section>
         <button type="submit">Generate!</button>
     </form>
+
+    <section id="player">
+
+    </section>
 </div>

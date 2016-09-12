@@ -3,40 +3,43 @@
     padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.composer {
+    width: 60%;
+    margin: auto;
+    text-align: center;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.composer .columns {
+    display: flex;
 }
 
-/* styles for validation helpers */
-.field-validation-error {
-    color: #b94a48;
+.composer h1 {
+    text-align: center;
 }
 
-.field-validation-valid {
-    display: none;
+.composer textarea {
+    width: 70%;
+    height: 200px;
+    border: 1px solid gray;
+    margin: 30px 0;
 }
 
-input.input-validation-error {
-    border: 1px solid #b94a48;
+.composer .menu {
+    flex: 1;
+    text-align: left;
+    margin: 30px 0;
+    padding: 0 30px;
 }
 
-input[type="checkbox"].input-validation-error {
-    border: 0 none;
+.composer .menu p:first-child {
+    margin-top: 0;
 }
 
-.validation-summary-errors {
-    color: #b94a48;
+.composer .menu ul {
+    list-style: none;
+    list-style-type: none;
 }
 
-.validation-summary-valid {
-    display: none;
+.composer button {
+    margin: 10px;
 }

@@ -14,7 +14,10 @@ type HomeController() =
     member this.Index () = this.View()
 
     [<HttpPost>]
-    member this.Generate (score:string) = 
+    member this.Generate ([<FromBody>]score:string) = 
+        if score = null then
+            failwith "No composer content provided"
+
         match Assembler.assembleToPackedStream score with
             | Choice1Of2 res -> 
                 this.Response.AppendHeader("Content-Disposition", ContentDisposition(FileName="ring.wav", Inline=false).ToString())
@@ -22,3 +25,6 @@ type HomeController() =
                 this.File(res, "audio/x-wav")
             | Choice2Of2 err -> failwith err
 
+    [<HttpPost>]
+    member this.Test (content:string) =
+        this.Content("Request result")
